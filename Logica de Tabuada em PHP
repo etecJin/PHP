@@ -1,0 +1,8 @@
+       $tab = $_POST["edTABUADA"];
+        if(!is_numeric($tab)){
+            echo"<br>O valor informado não é um número<br>";
+        }else{
+            for($num=0;$num<=10;$num++){
+                //0x$tab = $num*$tab
+                //0x5 = (0*5) = 0
+                echo $num."x".$tab."=".($num*$tab)."<br>";

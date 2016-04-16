@@ -1,0 +1,20 @@
+-- Banco de dados: `agenda`
+--
+CREATE DATABASE IF NOT EXISTS `agenda` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
+USE `agenda`;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `tb_contatos`
+--
+
+CREATE TABLE IF NOT EXISTS `tb_contatos` (
+  `id_contatos` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(255) COLLATE utf8_bin NOT NULL,
+  `sobrenome` varchar(255) COLLATE utf8_bin NOT NULL,
+  `email` varchar(255) COLLATE utf8_bin NOT NULL,
+  `tel` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  `cel` varchar(255) COLLATE utf8_bin DEFAULT NULL,
+  PRIMARY KEY (`id_contatos`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=5 ;
